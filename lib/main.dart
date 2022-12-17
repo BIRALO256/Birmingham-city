@@ -50,107 +50,109 @@ class _MyHomePageState extends State<MyHomePage> {
         title:Text("Birmingham city", style: TextStyle(color: Colors.black),),
 
       ),
-      body: ListView(
-        children: [
-          FormBuilderTextField(
-            name:'Intro',
-            initialValue: "Welcome to Birmingham City",
-            decoration: InputDecoration(
-              icon:Icon(Icons.my_location),
+      body:SingleChildScrollView(
+        child: ListView(
+          children: [
+            FormBuilderTextField(
+              name:'Intro',
+              initialValue: "Welcome to Birmingham City",
+              decoration: InputDecoration(
+                icon:Icon(Icons.my_location),
+              ),
+              readOnly: true,
             ),
-            readOnly: true,
-          ),
-          ListTile(
-            title: Text("Members"),
-            leading: Icon(Icons.person_add),
-            trailing: Icon(Icons.chevron_right),
-            subtitle: Text("Everything about the members of the city..."),
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>MembersScreen(),
-              ),
-              );
-            },
-          ),
-          ListTile(
-            title: Text("Football Teams Supported"),
-            leading: Icon(Icons.sports_volleyball_outlined),
-            trailing: Icon(Icons.chevron_right),
-            subtitle: Text("EVerything about the teams supported....."), 
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>TeamsScreen(),
-              ),
-              );
-            },
-          ),
-          ListTile(
-            title: Text("News"),
-            leading: Icon(Icons.newspaper_outlined),
-            trailing: Icon(Icons.chevron_right),
-            subtitle: Text("Latest news in the city"),
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>NewsScreen(),
-              ),
-              );
-            },
-          ),
-          ListTile(
-            title: Text("Jobs"),
-            leading: Icon(Icons.work),
-            trailing: Icon(Icons.chevron_right),
-            subtitle: Text("Jobs Found in this City"),
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsScreen(),
-              ),
-              );
-            },
-          ),
-          ListTile(
-            title: Text("Music"),
-            leading: Icon(Icons.queue_music_outlined),
-            trailing: Icon(Icons.chevron_right),
-            subtitle: Text("Latest reggae Jams"),
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>MusicScreen(),
-              ),
-              );
-            },
-          ),
-          ListTile(
-            title: Text("Chart"),
-            leading: Icon(Icons.message_outlined),
-            trailing: Icon(Icons.chevron_right),
-            subtitle: Text("Send and receive messages from the citizens"),
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>ChartScreen(),
-              ),
-              );
-            },
-          ),
-          ListTile(
-            title: Text("Signup "),
-            leading: Icon(Icons.login_sharp),
-            trailing: Icon(Icons.chevron_right),
-            /*subtitle: Text("Send and receive messages from the citizens"),*/
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScren(),
-              ),
-              );
-            },
-          ),
-          ListTile(
-            title: Text("Login "),
-            leading: Icon(Icons.logout_sharp),
-            trailing: Icon(Icons.chevron_right),
-            /*subtitle: Text("Send and receive messages from the citizens"),*/
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUpScren(),
-              ),
-              );
-            },
-          ),
+            ListTile(
+              title: Text("Members"),
+              leading: Icon(Icons.person_add),
+              trailing: Icon(Icons.chevron_right),
+              subtitle: Text("Everything about the members of the city..."),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MembersScreen(),
+                ),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Football Teams Supported"),
+              leading: Icon(Icons.sports_volleyball_outlined),
+              trailing: Icon(Icons.chevron_right),
+              subtitle: Text("EVerything about the teams supported....."),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>TeamsScreen(),
+                ),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("News"),
+              leading: Icon(Icons.newspaper_outlined),
+              trailing: Icon(Icons.chevron_right),
+              subtitle: Text("Latest news in the city"),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>NewsScreen(),
+                ),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Jobs"),
+              leading: Icon(Icons.work),
+              trailing: Icon(Icons.chevron_right),
+              subtitle: Text("Jobs Found in this City"),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>JobsScreen(),
+                ),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Music"),
+              leading: Icon(Icons.queue_music_outlined),
+              trailing: Icon(Icons.chevron_right),
+              subtitle: Text("Latest reggae Jams"),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MusicScreen(),
+                ),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Chart"),
+              leading: Icon(Icons.message_outlined),
+              trailing: Icon(Icons.chevron_right),
+              subtitle: Text("Send and receive messages from the citizens"),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>ChartScreen(),
+                ),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Signup "),
+              leading: Icon(Icons.login_sharp),
+              trailing: Icon(Icons.chevron_right),
+              /*subtitle: Text("Send and receive messages from the citizens"),*/
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScren(),
+                ),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Login "),
+              leading: Icon(Icons.logout_sharp),
+              trailing: Icon(Icons.chevron_right),
+              /*subtitle: Text("Send and receive messages from the citizens"),*/
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUpScren(),
+                ),
+                );
+              },
+            ),
 
 
-        ],
+          ],
+        ),
       ),
     );
   }
